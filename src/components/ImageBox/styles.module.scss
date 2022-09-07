@@ -1,0 +1,17 @@
+.container {
+  width: 135px;
+  height: 135px;
+  background-color: var(--white);
+  border-radius: 30px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.221);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 104px;
+    height: 88px;
+    margin-left: 15px;
+  }
+}

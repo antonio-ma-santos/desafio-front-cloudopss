@@ -1,0 +1,136 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 6rem;
+  border-radius: 50px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, .212);
+  background-color: var(--white);
+
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
+.form {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+  
+  label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+
+  input {
+    width: 12rem;
+    height: 2rem;
+    padding: 0 1.2rem;
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, .221);
+
+    &:focus-visible {
+      outline: 2px solid var(--orange-300);
+    }
+
+    &::placeholder {
+      color: #777;
+    }
+  }
+}
+
+.gender {
+  display: flex;
+  
+  div {
+    margin-right: 120px;
+    display: flex;
+
+    input {
+      appearance: none;
+      box-shadow: none;
+      padding: 0;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      border: 1px solid #999;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      &::before {
+        content: '';
+        position: absolute;
+        width: 7.5px;
+        height: 7.5px;
+        background-color: var(--orange-300);
+        border-radius: 50%;
+        opacity: 0;
+      }
+
+      &:checked::before {
+        opacity: 1;
+      }
+    }
+
+    label {
+      margin-left: 5px;
+    }
+  }
+}
+
+.groupBox {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.borth {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+
+  input {
+    height: 2rem;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
+.fat {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+
+  select {
+    height: 2rem;
+    padding: 0 1rem;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, .221);
+    background-color: var(--white);
+
+    &:focus-visible {
+      outline: 2px solid var(--orange-300);
+    }
+  }
+}

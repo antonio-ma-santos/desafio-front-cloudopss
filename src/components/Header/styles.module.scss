@@ -1,0 +1,72 @@
+.headerContainer {
+  height: 3.2rem;
+  margin-top: 30px;
+}
+
+.headerContent {
+  max-width: 1292px;
+  height: 3.2rem;
+  margin: 0 auto;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 150px;
+    width: 150px;
+  }
+
+  nav {
+    margin-left: 8rem;
+    height: 3.2rem;
+    
+    a {
+      font-weight: 700;
+      font-size: 1rem;
+      height: 3.2rem;
+      line-height: 3.2rem;
+      padding: 0 0.5rem;
+
+      transition: color 0.2s;
+
+      & + a {
+        margin-left: 2rem;
+      }
+
+      &:hover {
+        color: #888;
+      }
+    }
+  }
+
+  div {
+    margin-left: auto;
+
+    button {
+      margin-left: 1rem;
+      width: 9.8rem;
+      height: 3rem;
+      line-height: 2.9rem;
+      border-radius: 3rem;
+      background-color: var(--orange-300);
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: bold;
+    
+      transition: filter 0.2s;
+    
+      &:hover {
+        filter: brightness(0.9);
+      }
+    }
+  }
+}
+
+.sigUp {
+  border: 2px solid var(--white);
+}
+
+.login {
+  border: 2px solid var(--orange-100);
+}

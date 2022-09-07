@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 135px;
+  height: 40px;
+  padding: 0 10px;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, .221);
+  background-color: var(--white);
+  border-radius: 30px;
+  
+  input {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    border: 1px solid #999;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      background-color: var(--orange-300);
+      border-radius: 50%;
+      opacity: 0;
+    }
+  
+    &:checked::before {
+      opacity: 1;
+    }
+  }
+
+  label {
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+}

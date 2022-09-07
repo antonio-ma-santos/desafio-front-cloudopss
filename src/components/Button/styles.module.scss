@@ -1,0 +1,17 @@
+.button {
+  height: 2.8rem;
+  padding: 0 1.5rem;
+  line-height: 2.8rem;
+  border: 0;
+  border-radius: 2rem;
+  background-color: var(--orange-300);
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: bold;
+
+  transition: filter 0.2s;
+
+  &:hover {
+    filter: brightness(0.9);
+  }
+}
