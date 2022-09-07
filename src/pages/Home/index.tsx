@@ -1,9 +1,9 @@
+import { InfoUser } from "../../components/InfoUser";
+import { Button } from "../../components/Button";
 import { RadioBox } from "../../components/RadioBox";
 import { ImageBox } from "../../components/ImageBox";
 import { Plans } from "../../components/Plans";
 import { Footer } from "../../components/Footer";
-import { InfoUser } from "../../components/InfoUser";
-import { Button } from "../../components/Button";
 
 import styles from "./styles.module.scss";
 
@@ -23,6 +23,8 @@ import hazel from "../../assets/hazelnuts-and-caramel-sauce.svg";
 import mush from "../../assets/mushrooms-on-white-background.svg";
 import tomatoes from "../../assets/fresh-tomatoes-on-white-background-top-view-BVTWL2Z 2.svg";
 import healthy from "../../assets/healthy-food-ingredients.svg";
+import pizza from "../../assets/freshly-baked-pizza.svg";
+import m from "../../assets/M.svg";
 
 export function Home() {
   
@@ -118,6 +120,7 @@ export function Home() {
         <div className={styles.containerRestriction}>
           <img src={mush} alt="mush" />
           <img src={tomatoes} alt="tomate" />
+          <img src={pizza} alt="pizza" />
           <h3>Você tem alguma<br />restrição alimentar?</h3>
           <div>
             <section>
@@ -143,6 +146,7 @@ export function Home() {
             </div>
           </div>
           <img src={healthy} alt="alimentos saudaveis" />
+          <img src={m} alt="imagem de um M verde" />
         </div>
 
         <div className={styles.infoDiet}>
